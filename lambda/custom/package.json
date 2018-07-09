@@ -1,0 +1,17 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uploadModelUS": "ask api update-model --skill-id amzn1.ask.skill.f838ce56-e2e7-4f7b-aeb2-b627a1eed8bd --file models/en-US.json --locale en-US --profile MoviewTestUser --stage development",
+    "getModel": "ask api get-model --skill-id amzn1.ask.skill.f838ce56-e2e7-4f7b-aeb2-b627a1eed8bd --stage development --locale en-US > models/en-US.json --profile MoviewTestUser"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.0.0",
+    "ask-sdk-model": "^1.0.0"
+  }
+}

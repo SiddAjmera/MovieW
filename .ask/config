@@ -1,0 +1,41 @@
+{
+  "deploy_settings": {
+    "MoviewTestUser": {
+      "skill_id": "amzn1.ask.skill.f838ce56-e2e7-4f7b-aeb2-b627a1eed8bd",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-MovieW-MoviewTestUser"
+              }
+            }
+          }
+        }
+      },
+      "resources": {
+        "manifest": {
+          "eTag": "24c6f7a36c5f970bb70931d1648eef30"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "f5a7f560bc414bff4508eca10510e68f"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:233866401466:function:ask-custom-MovieW-MoviewTestUser",
+            "functionName": "ask-custom-MovieW-MoviewTestUser",
+            "awsRegion": "us-east-1",
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "revisionId": "3d2631f8-b746-441a-8493-1b1835920114"
+          }
+        ]
+      },
+      "in_skill_products": []
+    }
+  }
+}
